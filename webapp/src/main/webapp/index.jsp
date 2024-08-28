@@ -1,40 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Employee Details</title>
-</head>
-<body>
-  <form>
-    <fieldset>
-    <legend>Employee Details</legend>
-     <p>
-         First name: <input type = "text" name = "fname" />
-  </p>
-   <p>
-         Last name: <input type = "text" name = "lname" />
-  </p>
- 
-   <p>
-         <input type = "radio" name = "Gender" value = "Male"> Male
-         <input type = "radio" name = "Gender" value = "Female"> Female
-</p>
- 
-<p>
-Employee ID: <input type = "text" name = "ID" />
-</p>
- 
-<p>
-Designation: <input type = "text" name = "ID" />
-</p>
- 
-<p>
-Phone Number: <input type = "text" name = "phone" />
-</p>
- 
- <p>
-      <input type = "submit" name = "submit" value = "Submit" />
-    </p>
-</fieldset>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" name="name"><br><br>
+    <label for="sex">Sex:</label>
+    <input type="radio" name="sex" id="male" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="sex" id="female" value="female">
+    <label for="female">Female</label> <br><br>
+    <label for="country">Country: </label>
+    <select name="country" id="country">
+        <option>Select an option</option>
+        <option value="nepal">Nepal</option>
+        <option value="usa">USA</option>
+        <option value="australia">Australia</option>
+    </select><br><br>
+    <label for="message">Message:</label><br>
+    <textarea name="message" id="message" cols="30" rows="4"></textarea><br><br>
+    <input type="checkbox" name="newsletter" id="newsletter">
+    <label for="newsletter">Subscribe?</label><br><br>
+    <input type="submit" value="Submit">
 </form>
-</body>
-</html>
